@@ -2,6 +2,8 @@
 
 为加速各种快速开发场景设计的专业AI代理集合。每个代理都是其专业领域的专家，在需要时可以被激活使用。
 
+**其他语言** | **Other Languages**: [English Version](README.md) | [中文版本](README-zh.md)
+
 ## 📥 安装
 
 1. **下载本仓库：**

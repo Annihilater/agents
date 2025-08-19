@@ -2,6 +2,8 @@
 
 A comprehensive collection of specialized AI agents designed to accelerate and enhance every aspect of rapid development. Each agent is an expert in their domain, ready to be invoked when their expertise is needed.
 
+**其他语言** | **Other Languages**: [中文版本](README-zh.md) | [English Version](README.md)
+
 ## 📥 Installation
 
 1. **Download this repository:**
