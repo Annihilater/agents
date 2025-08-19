@@ -5,13 +5,15 @@ A comprehensive collection of specialized AI agents designed to accelerate and e
 ## 📥 Installation
 
 1. **Download this repository:**
+
    ```bash
    git clone https://github.com/Annihilater/agents
    ```
 
 2. **Copy to your Claude Code agents directory:**
+
    ```bash
-   cp -r agents/* ~/.claude/agents/
+   ./sync_to_claude.sh
    ```
 
    Or manually copy all the agent files to your `~/.claude/agents/` directory.
@@ -25,6 +27,7 @@ Agents are automatically available in Claude Code. Simply describe your task and
 📚 **Learn more:** [Claude Code Sub-Agents Documentation](https://docs.anthropic.com/en/docs/claude-code/sub-agents)
 
 ### Example Usage
+
 - "Create a new app for tracking meditation habits" → `rapid-prototyper`
 - "What's trending on TikTok that we could build?" → `trend-researcher`
 - "Our app reviews are dropping, what's wrong?" → `feedback-synthesizer`
@@ -145,6 +148,7 @@ claude-agents/
 ## 📋 Complete Agent List
 
 ### 🛠️ Engineering (`engineering/`)
+
 - **ai-engineer** - Integrate AI/ML features that actually ship
 - **backend-architect** - Design scalable APIs and server systems
 - **devops-automator** - Deploy continuously without breaking things
@@ -156,6 +160,7 @@ claude-agents/
 - **test-writer-fixer** - Write tests that catch real bugs
 
 ### 💻 Programming Languages (`languages/`)
+
 - **c-pro** - Systems programming with C
 - **cpp-pro** - Modern C++ development  
 - **golang-pro** - High-performance Go applications
@@ -170,6 +175,7 @@ claude-agents/
 - **typescript-pro** - Type-safe TypeScript applications
 
 ### 🔧 Development Tools (`development/`)
+
 - **api-documenter** - Comprehensive API documentation
 - **architect-review** - Code architecture analysis
 - **code-reviewer** - Code quality and Git commit standards
@@ -181,6 +187,7 @@ claude-agents/
 - **performance-engineer** - Application performance optimization
 
 ### 🎨 Design & UX (`design/`)
+
 - **brand-guardian** - Visual identity consistency
 - **ui-designer** - Interface design and components
 - **ui-ux-designer** - Combined UI/UX expertise
@@ -189,6 +196,7 @@ claude-agents/
 - **whimsy-injector** - Delightful user interactions
 
 ### 🏗️ Infrastructure (`infrastructure/`)
+
 - **cloud-architect** - Cloud infrastructure design
 - **database-admin** - Database management and operations
 - **database-optimizer** - Query and schema optimization
@@ -197,11 +205,13 @@ claude-agents/
 - **terraform-specialist** - Infrastructure as Code
 
 ### 📊 Product Management (`product/`)
+
 - **feedback-synthesizer** - Transform user feedback into features
 - **sprint-prioritizer** - Maximize value in 6-day sprints
 - **trend-researcher** - Identify market opportunities
 
 ### 📈 Marketing & Growth (`marketing/`)
+
 - **app-store-optimizer** - App store visibility and conversion
 - **content-creator** - Multi-platform content generation
 - **growth-hacker** - Viral growth strategies
@@ -211,11 +221,13 @@ claude-agents/
 - **twitter-engager** - Twitter growth and engagement
 
 ### 🎯 Project Management (`project-management/`)
+
 - **experiment-tracker** - A/B testing and feature validation
 - **project-shipper** - Launch coordination and delivery
 - **studio-producer** - Team coordination and workflow
 
 ### 🏢 Operations (`operations/`)
+
 - **content-marketer** - Content marketing strategies
 - **customer-support** - User support and satisfaction
 - **deployment-engineer** - CI/CD and deployment automation
@@ -224,6 +236,7 @@ claude-agents/
 - **sales-automator** - Sales process automation
 
 ### 📊 Studio Operations (`studio-operations/`)
+
 - **analytics-reporter** - Data insights and reporting
 - **finance-tracker** - Financial management and budgeting
 - **infrastructure-maintainer** - System maintenance and scaling
@@ -231,6 +244,7 @@ claude-agents/
 - **support-responder** - Customer support optimization
 
 ### 🔬 Testing & Quality (`testing/`)
+
 - **api-tester** - API testing and validation
 - **performance-benchmarker** - Performance measurement and optimization
 - **test-automator** - Test suite automation
@@ -239,11 +253,13 @@ claude-agents/
 - **workflow-optimizer** - Development workflow improvements
 
 ### 💰 Finance & Analytics (`finance/`)
+
 - **business-analyst** - Business metrics and KPI analysis
 - **quant-analyst** - Quantitative analysis and modeling
 - **risk-manager** - Risk assessment and mitigation
 
 ### 🚀 Specialized Domains (`specialized/`)
+
 - **ai-fullstack-guide** - 🆕 Comprehensive AI development methodology
 - **data-engineer** - Data pipeline and ETL systems
 - **data-scientist** - Data analysis and machine learning
@@ -256,12 +272,14 @@ claude-agents/
 - **search-specialist** - Search functionality and optimization
 
 ## 🎁 Bonus Agents
+
 - **studio-coach** - Rally the AI troops to excellence
 - **joker** - Lighten the mood with tech humor
 
 ## 🎯 Proactive Agents
 
 Some agents trigger automatically in specific contexts:
+
 - **studio-coach** - When complex multi-agent tasks begin or agents need guidance
 - **test-writer-fixer** - After implementing features, fixing bugs, or modifying code
 - **whimsy-injector** - After UI/UX changes
@@ -277,7 +295,9 @@ Some agents trigger automatically in specific contexts:
 ## 🔧 Technical Details
 
 ### Agent Structure
+
 Each agent includes:
+
 - **name**: Unique identifier
 - **description**: When to use the agent with examples
 - **color**: Visual identification
@@ -285,6 +305,7 @@ Each agent includes:
 - **System prompt**: Detailed expertise and instructions
 
 ### Adding New Agents
+
 1. Create a new `.md` file in the appropriate department folder
 2. Follow the existing format with YAML frontmatter
 3. Include 3-4 detailed usage examples
@@ -294,6 +315,7 @@ Each agent includes:
 ## 📊 Agent Performance
 
 Track agent effectiveness through:
+
 - Task completion time
 - User satisfaction
 - Error rates
@@ -313,6 +335,7 @@ Track agent effectiveness through:
 Use this checklist when creating or modifying agents for your specific needs:
 
 #### 📋 Required Components
+
 - [ ] **YAML Frontmatter**
   - [ ] `name`: Unique agent identifier (kebab-case)
   - [ ] `description`: When to use + 3-4 detailed examples with context/commentary
@@ -320,6 +343,7 @@ Use this checklist when creating or modifying agents for your specific needs:
   - [ ] `tools`: Specific tools the agent can access (Write, Read, MultiEdit, Bash, etc.)
 
 #### 📝 System Prompt Requirements (500+ words)
+
 - [ ] **Agent Identity**: Clear role definition and expertise area
 - [ ] **Core Responsibilities**: 5-8 specific primary duties
 - [ ] **Domain Expertise**: Technical skills and knowledge areas
@@ -331,36 +355,42 @@ Use this checklist when creating or modifying agents for your specific needs:
 #### 🎯 Required Examples by Agent Type
 
 **Engineering Agents** need examples for:
+
 - [ ] Feature implementation requests
 - [ ] Bug fixing scenarios
 - [ ] Code refactoring tasks
 - [ ] Architecture decisions
 
 **Design Agents** need examples for:
+
 - [ ] New UI component creation
 - [ ] Design system work
 - [ ] User experience problems
 - [ ] Visual identity tasks
 
 **Marketing Agents** need examples for:
+
 - [ ] Campaign creation requests
 - [ ] Platform-specific content needs
 - [ ] Growth opportunity identification
 - [ ] Brand positioning tasks
 
 **Product Agents** need examples for:
+
 - [ ] Feature prioritization decisions
 - [ ] User feedback analysis
 - [ ] Market research requests
 - [ ] Strategic planning needs
 
 **Operations Agents** need examples for:
+
 - [ ] Process optimization
 - [ ] Tool evaluation
 - [ ] Resource management
 - [ ] Performance analysis
 
 #### ✅ Testing & Validation Checklist
+
 - [ ] **Trigger Testing**: Agent activates correctly for intended use cases
 - [ ] **Tool Access**: Agent can use all specified tools properly
 - [ ] **Output Quality**: Responses are helpful and actionable
@@ -404,6 +434,7 @@ Your goal is to [ultimate objective]. You [key behavior traits]. Remember: [key 
 #### 🎨 Customizations
 
 Modify these elements for your needs:
+
 - [ ] Adjust examples to reflect your product types
 - [ ] Add specific tools agents have access to
 - [ ] Modify success metrics for your KPIs
@@ -413,6 +444,7 @@ Modify these elements for your needs:
 ## 🤝 Contributing
 
 To improve existing agents or suggest new ones:
+
 1. Use the customization checklist above
 2. Test thoroughly with real projects
 3. Document performance improvements
