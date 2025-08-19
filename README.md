@@ -29,28 +29,71 @@ Agents are automatically available in Claude Code. Simply describe your task and
 - "What's trending on TikTok that we could build?" → `trend-researcher`
 - "Our app reviews are dropping, what's wrong?" → `feedback-synthesizer`
 - "Make this loading screen more fun" → `whimsy-injector`
+- "Build a high-performance Rust backend API" → `rust-backend-pro`
+- "Create a WebAssembly frontend with Yew" → `rust-frontend-pro`
+- "Write Python unit tests following company standards" → `test-writer-fixer` + `python-pro`
 
 ## 📁 Directory Structure
 
-Agents are organized by department for easy discovery:
+Agents are organized by functional categories for easy discovery:
 
 ```
-contains-studio-agents/
-├── design/
+claude-agents/
+├── bonus/                    # 特殊功能agents
+│   ├── joker.md
+│   └── studio-coach.md
+├── design/                   # 设计和用户体验
 │   ├── brand-guardian.md
 │   ├── ui-designer.md
+│   ├── ui-ux-designer.md
 │   ├── ux-researcher.md
 │   ├── visual-storyteller.md
 │   └── whimsy-injector.md
-├── engineering/
+├── development/              # 开发工具和代码质量
+│   ├── api-documenter.md
+│   ├── architect-review.md
+│   ├── code-reviewer.md
+│   ├── context-manager.md
+│   ├── debugger.md
+│   ├── dx-optimizer.md
+│   ├── error-detective.md
+│   ├── legacy-modernizer.md
+│   └── performance-engineer.md
+├── engineering/              # 软件工程和架构
 │   ├── ai-engineer.md
 │   ├── backend-architect.md
 │   ├── devops-automator.md
 │   ├── frontend-developer.md
+│   ├── ios-developer.md
 │   ├── mobile-app-builder.md
+│   ├── mobile-developer.md
 │   ├── rapid-prototyper.md
 │   └── test-writer-fixer.md
-├── marketing/
+├── finance/                  # 财务和商业分析
+│   ├── business-analyst.md
+│   ├── quant-analyst.md
+│   └── risk-manager.md
+├── infrastructure/           # 基础设施和安全
+│   ├── cloud-architect.md
+│   ├── database-admin.md
+│   ├── database-optimizer.md
+│   ├── network-engineer.md
+│   ├── security-auditor.md
+│   └── terraform-specialist.md
+├── languages/                # 编程语言专家
+│   ├── c-pro.md
+│   ├── cpp-pro.md
+│   ├── golang-pro.md
+│   ├── java-pro.md
+│   ├── javascript-pro.md
+│   ├── php-pro.md
+│   ├── python-pro.md
+│   ├── rust-backend-pro.md   # 新增: Rust后端开发专家
+│   ├── rust-frontend-pro.md  # 新增: Rust前端开发专家
+│   ├── rust-pro.md
+│   ├── sql-pro.md
+│   └── typescript-pro.md
+├── marketing/                # 营销和增长
 │   ├── app-store-optimizer.md
 │   ├── content-creator.md
 │   ├── growth-hacker.md
@@ -58,81 +101,159 @@ contains-studio-agents/
 │   ├── reddit-community-builder.md
 │   ├── tiktok-strategist.md
 │   └── twitter-engager.md
-├── product/
+├── operations/               # 运维和业务操作
+│   ├── content-marketer.md
+│   ├── customer-support.md
+│   ├── deployment-engineer.md
+│   ├── devops-troubleshooter.md
+│   ├── incident-responder.md
+│   └── sales-automator.md
+├── product/                  # 产品管理
 │   ├── feedback-synthesizer.md
 │   ├── sprint-prioritizer.md
 │   └── trend-researcher.md
-├── project-management/
+├── project-management/       # 项目管理
 │   ├── experiment-tracker.md
 │   ├── project-shipper.md
 │   └── studio-producer.md
-├── studio-operations/
+├── specialized/              # 专业领域专家
+│   ├── ai-fullstack-guide.md # 新增: AI全栈开发助手
+│   ├── data-engineer.md
+│   ├── data-scientist.md
+│   ├── graphql-architect.md
+│   ├── legal-advisor.md
+│   ├── ml-engineer.md
+│   ├── mlops-engineer.md
+│   ├── payment-integration.md
+│   ├── prompt-engineer.md
+│   └── search-specialist.md
+├── studio-operations/        # 工作室运营
 │   ├── analytics-reporter.md
 │   ├── finance-tracker.md
 │   ├── infrastructure-maintainer.md
 │   ├── legal-compliance-checker.md
 │   └── support-responder.md
-├── testing/
-│   ├── api-tester.md
-│   ├── performance-benchmarker.md
-│   ├── test-results-analyzer.md
-│   ├── tool-evaluator.md
-│   └── workflow-optimizer.md
-└── bonus/
-    ├── joker.md
-    └── studio-coach.md
+└── testing/                  # 测试和质量保证
+    ├── api-tester.md
+    ├── performance-benchmarker.md
+    ├── test-automator.md
+    ├── test-results-analyzer.md
+    ├── tool-evaluator.md
+    └── workflow-optimizer.md
 ```
 
 ## 📋 Complete Agent List
 
-### Engineering Department (`engineering/`)
+### 🛠️ Engineering (`engineering/`)
 - **ai-engineer** - Integrate AI/ML features that actually ship
 - **backend-architect** - Design scalable APIs and server systems
 - **devops-automator** - Deploy continuously without breaking things
 - **frontend-developer** - Build blazing-fast user interfaces
-- **mobile-app-builder** - Create native iOS/Android experiences
+- **ios-developer** - Native iOS development expert
+- **mobile-app-builder** - Create cross-platform mobile experiences
+- **mobile-developer** - React Native/Flutter development
 - **rapid-prototyper** - Build MVPs in days, not weeks
 - **test-writer-fixer** - Write tests that catch real bugs
 
-### Product Department (`product/`)
-- **feedback-synthesizer** - Transform complaints into features
-- **sprint-prioritizer** - Ship maximum value in 6 days
-- **trend-researcher** - Identify viral opportunities
+### 💻 Programming Languages (`languages/`)
+- **c-pro** - Systems programming with C
+- **cpp-pro** - Modern C++ development  
+- **golang-pro** - High-performance Go applications
+- **java-pro** - Enterprise Java solutions
+- **javascript-pro** - Modern ES6+ and Node.js
+- **php-pro** - Scalable PHP applications
+- **python-pro** - Idiomatic Python with strict coding standards
+- **rust-backend-pro** - 🆕 High-performance Rust backend services
+- **rust-frontend-pro** - 🆕 Modern Rust frontend with WebAssembly
+- **rust-pro** - Systems programming with Rust
+- **sql-pro** - Advanced database queries and optimization
+- **typescript-pro** - Type-safe TypeScript applications
 
-### Marketing Department (`marketing/`)
-- **app-store-optimizer** - Dominate app store search results
-- **content-creator** - Generate content across all platforms
-- **growth-hacker** - Find and exploit viral growth loops
-- **instagram-curator** - Master the visual content game
-- **reddit-community-builder** - Win Reddit without being banned
-- **tiktok-strategist** - Create shareable marketing moments
-- **twitter-engager** - Ride trends to viral engagement
+### 🔧 Development Tools (`development/`)
+- **api-documenter** - Comprehensive API documentation
+- **architect-review** - Code architecture analysis
+- **code-reviewer** - Code quality and Git commit standards
+- **context-manager** - Multi-agent workflow coordination
+- **debugger** - Error diagnosis and resolution
+- **dx-optimizer** - Developer experience improvements
+- **error-detective** - Log analysis and error tracking
+- **legacy-modernizer** - Legacy system upgrades
+- **performance-engineer** - Application performance optimization
 
-### Design Department (`design/`)
-- **brand-guardian** - Keep visual identity consistent everywhere
-- **ui-designer** - Design interfaces developers can actually build
-- **ux-researcher** - Turn user insights into product improvements
-- **visual-storyteller** - Create visuals that convert and share
-- **whimsy-injector** - Add delight to every interaction
+### 🎨 Design & UX (`design/`)
+- **brand-guardian** - Visual identity consistency
+- **ui-designer** - Interface design and components
+- **ui-ux-designer** - Combined UI/UX expertise
+- **ux-researcher** - User insights and product improvements
+- **visual-storyteller** - Visual content creation
+- **whimsy-injector** - Delightful user interactions
 
-### Project Management (`project-management/`)
-- **experiment-tracker** - Data-driven feature validation
-- **project-shipper** - Launch products that don't crash
-- **studio-producer** - Keep teams shipping, not meeting
+### 🏗️ Infrastructure (`infrastructure/`)
+- **cloud-architect** - Cloud infrastructure design
+- **database-admin** - Database management and operations
+- **database-optimizer** - Query and schema optimization
+- **network-engineer** - Network configuration and security
+- **security-auditor** - Security analysis and compliance
+- **terraform-specialist** - Infrastructure as Code
 
-### Studio Operations (`studio-operations/`)
-- **analytics-reporter** - Turn data into actionable insights
-- **finance-tracker** - Keep the studio profitable
-- **infrastructure-maintainer** - Scale without breaking the bank
-- **legal-compliance-checker** - Stay legal while moving fast
-- **support-responder** - Turn angry users into advocates
+### 📊 Product Management (`product/`)
+- **feedback-synthesizer** - Transform user feedback into features
+- **sprint-prioritizer** - Maximize value in 6-day sprints
+- **trend-researcher** - Identify market opportunities
 
-### Testing & Benchmarking (`testing/`)
-- **api-tester** - Ensure APIs work under pressure
-- **performance-benchmarker** - Make everything faster
-- **test-results-analyzer** - Find patterns in test failures
-- **tool-evaluator** - Choose tools that actually help
-- **workflow-optimizer** - Eliminate workflow bottlenecks
+### 📈 Marketing & Growth (`marketing/`)
+- **app-store-optimizer** - App store visibility and conversion
+- **content-creator** - Multi-platform content generation
+- **growth-hacker** - Viral growth strategies
+- **instagram-curator** - Visual content mastery
+- **reddit-community-builder** - Reddit engagement strategies
+- **tiktok-strategist** - TikTok marketing and viral content
+- **twitter-engager** - Twitter growth and engagement
+
+### 🎯 Project Management (`project-management/`)
+- **experiment-tracker** - A/B testing and feature validation
+- **project-shipper** - Launch coordination and delivery
+- **studio-producer** - Team coordination and workflow
+
+### 🏢 Operations (`operations/`)
+- **content-marketer** - Content marketing strategies
+- **customer-support** - User support and satisfaction
+- **deployment-engineer** - CI/CD and deployment automation
+- **devops-troubleshooter** - Production issue resolution
+- **incident-responder** - Crisis management and recovery
+- **sales-automator** - Sales process automation
+
+### 📊 Studio Operations (`studio-operations/`)
+- **analytics-reporter** - Data insights and reporting
+- **finance-tracker** - Financial management and budgeting
+- **infrastructure-maintainer** - System maintenance and scaling
+- **legal-compliance-checker** - Legal and regulatory compliance
+- **support-responder** - Customer support optimization
+
+### 🔬 Testing & Quality (`testing/`)
+- **api-tester** - API testing and validation
+- **performance-benchmarker** - Performance measurement and optimization
+- **test-automator** - Test suite automation
+- **test-results-analyzer** - Test data analysis and insights
+- **tool-evaluator** - Development tool assessment
+- **workflow-optimizer** - Development workflow improvements
+
+### 💰 Finance & Analytics (`finance/`)
+- **business-analyst** - Business metrics and KPI analysis
+- **quant-analyst** - Quantitative analysis and modeling
+- **risk-manager** - Risk assessment and mitigation
+
+### 🚀 Specialized Domains (`specialized/`)
+- **ai-fullstack-guide** - 🆕 Comprehensive AI development methodology
+- **data-engineer** - Data pipeline and ETL systems
+- **data-scientist** - Data analysis and machine learning
+- **graphql-architect** - GraphQL API design and optimization
+- **legal-advisor** - Legal documentation and compliance
+- **ml-engineer** - Machine learning model deployment
+- **mlops-engineer** - ML operations and model lifecycle
+- **payment-integration** - Payment system integration
+- **prompt-engineer** - AI prompt optimization
+- **search-specialist** - Search functionality and optimization
 
 ## 🎁 Bonus Agents
 - **studio-coach** - Rally the AI troops to excellence
