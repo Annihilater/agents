@@ -425,13 +425,13 @@ Your goal is to [ultimate objective]. You [key behavior traits]. Remember: [key 
 
 #### 📂 Department-Specific Guidelines
 
-**Engineering** (`engineering/`): Focus on implementation speed, code quality, testing
-**Design** (`design/`): Emphasize user experience, visual consistency, rapid iteration
-**Marketing** (`marketing/`): Target viral potential, platform expertise, growth metrics
-**Product** (`product/`): Prioritize user value, data-driven decisions, market fit
-**Operations** (`studio-operations/`): Optimize processes, reduce friction, scale systems
-**Testing** (`testing/`): Ensure quality, find bottlenecks, validate performance
-**Project Management** (`project-management/`): Coordinate teams, ship on time, manage scope
+- **Engineering** (`engineering/`): Focus on implementation speed, code quality, testing
+- **Design** (`design/`): Emphasize user experience, visual consistency, rapid iteration
+- **Marketing** (`marketing/`): Target viral potential, platform expertise, growth metrics
+- **Product** (`product/`): Prioritize user value, data-driven decisions, market fit
+- **Operations** (`studio-operations/`): Optimize processes, reduce friction, scale systems
+- **Testing** (`testing/`): Ensure quality, find bottlenecks, validate performance
+- **Project Management** (`project-management/`): Coordinate teams, ship on time, manage scope
 
 #### 🎨 Customizations
 
