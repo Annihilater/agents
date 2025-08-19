@@ -1,4 +1,4 @@
-# Contains Studio AI Agents
+# Claude Code AI Agents
 
 A comprehensive collection of specialized AI agents designed to accelerate and enhance every aspect of rapid development. Each agent is an expert in their domain, ready to be invoked when their expertise is needed.
 
@@ -6,14 +6,14 @@ A comprehensive collection of specialized AI agents designed to accelerate and e
 
 1. **Download this repository:**
    ```bash
-   git clone https://github.com/contains-studio/agents.git
+   git clone https://github.com/Annihilater/agents
    ```
 
 2. **Copy to your Claude Code agents directory:**
    ```bash
    cp -r agents/* ~/.claude/agents/
    ```
-   
+
    Or manually copy all the agent files to your `~/.claude/agents/` directory.
 
 3. **Restart Claude Code** to load the new agents.
@@ -273,7 +273,7 @@ Your goal is to [ultimate objective]. You [key behavior traits]. Remember: [key 
 #### 📂 Department-Specific Guidelines
 
 **Engineering** (`engineering/`): Focus on implementation speed, code quality, testing
-**Design** (`design/`): Emphasize user experience, visual consistency, rapid iteration  
+**Design** (`design/`): Emphasize user experience, visual consistency, rapid iteration
 **Marketing** (`marketing/`): Target viral potential, platform expertise, growth metrics
 **Product** (`product/`): Prioritize user value, data-driven decisions, market fit
 **Operations** (`studio-operations/`): Optimize processes, reduce friction, scale systems
